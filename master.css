@@ -98,3 +98,7 @@ dd {
   margin-left: 0px;
   text-indent: 20pt;
 }
+
+.word {
+    background: url(images/underline.gif) bottom repeat-x;
+}
