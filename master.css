@@ -9,26 +9,33 @@ header {
 
 header h1 {
   flex-grow: 1;
-  align: center;
-  text-align: center;
+  padding-left: 50px;
   font-family: 'latin_modern_roman10_bold';
 }
 
 header aside {
   flex-grow: 0;
-  text-align: center;
+  text-align: right;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 header aside li a {
   display: block;
+  /*
   height: 40px;
   width: 40px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   background-size: 40px 40px;
+  */
 }
 
+/*
 a.email {
   background-image: url("images/email.png");
 }
@@ -37,34 +44,31 @@ a.github {
   background-image: url("images/github.png");
 }
 
-a.spotify {
-  background-image: url("images/spotify.png");
-}
-
 a.linkedin {
   background-image: url("images/linkedin.png");
 }
 
-header ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-header ul li {
+header ul a {
   float: left;
 }
+*/
 
 section {
   position: relative;
   padding-left: 200px;
   margin-top: 40pt;
-  font-size: 12pt;
+  font-size: 15pt;
   text-align: justify;
 }
 
 section p {
   text-indent: 20pt;
   margin: 0;
+  color: #666;
+}
+
+a, .word {
+  color: black;
 }
 
 section > p:first-of-type {
@@ -78,11 +82,12 @@ section h2 {
   width: 180px;
   margin: 0px;
   text-align: right;
-  line-height: 12pt;
+  line-height: 15pt;
 }
 
 dt {
-  margin-top: 12pt;
+  margin-top: 15pt;
+  padding-right: 40px;
   font-weight: bold;
   position: relative;
 }
@@ -101,4 +106,26 @@ dd {
 
 .word {
     background: url(images/underline.gif) bottom repeat-x;
+}
+
+.latex sub, .latex sup {
+  text-transform: uppercase;
+}
+
+.latex sub {
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+}
+
+.latex, .latex sub {
+  font-size: 1em;
+  font-family: 'latin_modern_roman10_regular';
+}
+
+.latex sup {
+  font-size: 0.85em;
+  vertical-align: 0.15em;
+  margin-left: -0.36em;
+  margin-right: -0.15em;
 }
