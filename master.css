@@ -3,6 +3,7 @@ body {
   font-family: 'latin_modern_sans10_regular';
   font-size: 15pt;
   text-align: justify;
+  margin-bottom: 100px;
 }
 
 header {
