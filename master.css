@@ -1,5 +1,5 @@
 body {
-  width: 800px;
+  width: 850px;
   font-family: 'latin_modern_sans10_regular';
   font-size: 15pt;
   text-align: justify;
@@ -27,7 +27,7 @@ header ul {
 }
 
 header aside li a {
-  display: block;
+  /*display: block;*/
   /*
   height: 40px;
   width: 40px;
@@ -38,7 +38,8 @@ header aside li a {
   */
 }
 
-a, .word {
+a,
+.word {
   color: black;
 }
 
@@ -70,7 +71,8 @@ section:first-of-type {
   margin-top: 0px;
 }
 
-h2, h3 {
+h2,
+h3 {
   margin: 0px;
 }
 
@@ -93,7 +95,10 @@ section p {
   color: #666;
 }
 
-h2 + p, h3 + p {
+p:first-of-type,
+p.noindent,
+h2+p,
+h3+p {
   text-indent: 0pt;
 }
 
@@ -104,10 +109,11 @@ h3 {
 }
 
 .word {
-    background: url(images/underline.gif) bottom repeat-x;
+  background: url(images/underline.gif) bottom repeat-x;
 }
 
-.latex sub, .latex sup {
+.latex sub,
+.latex sup {
   text-transform: uppercase;
 }
 
@@ -117,7 +123,8 @@ h3 {
   margin-right: -0.125em;
 }
 
-.latex, .latex sub {
+.latex,
+.latex sub {
   font-size: 1em;
   font-family: 'latin_modern_roman10_regular';
 }
